@@ -1,0 +1,43 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Debug classes */
+
+#top-bar {
+  background-color: #e2e2e2;
+  height: 50px;
+}
+
+
+#app-container {
+  height: calc(100vh - 50px);
+  display: flex;
+}
+
+
+#app-navbar {
+  width: 150px;
+  background-color: #10283c;
+}
+
+
+#main-content {
+  /* overflow: auto; */
+  border: 5px dashed red;
+  width: calc(100vw - 150px);
+}
+
