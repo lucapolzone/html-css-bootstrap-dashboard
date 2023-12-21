@@ -68,6 +68,7 @@ a {
 #app-sidebar {
   width: 150px;
   background-color: #10283c;
+  background-image: url('../img/sidebar-bg.png');
 }
 
 
