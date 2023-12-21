@@ -6,37 +6,84 @@
   box-sizing: border-box;  
 }
 
+dl, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+
 li {
   list-style-type: none;
 }
 
 a {
+  color: white;
   text-decoration: none;
 }
 
 
-/* Debug classes */
 
-#top-bar {
-  background-color: #e2e2e2;
-  height: 50px;
+/* Debug */
+
+.debug {
+  border: 2px dashed red;
 }
 
+
+/* CUSTOM PROPS */
+
+:root {
+  --top-bar-height: 50px;
+}
+
+
+/* === APP TOP === */
+
+#app-top-bar {
+  background-color: #e2e2e2;
+  height: var(--top-bar-height);
+}
+
+
+/* === APP BOTTOM === */
 
 #app-container {
-  height: calc(100vh - 50px);
-  display: flex;
+  height: calc(100vh - var(--top-bar-height));
 }
 
 
-#app-navbar {
+/* === SIDEBAR === */
+
+#app-sidebar {
   width: 150px;
   background-color: #10283c;
 }
 
 
+#app-sidebar .fa-solid {
+  width: 20px;
+}
+
+.app-sidebar-section-bottom {
+  margin-top: auto;
+}
+
+
+
+/* === DASHBOARD MAIN CONTENT === */
+
 #main-content {
   /* overflow: auto; */
-  border: 5px dashed red;
   width: calc(100vw - 150px);
 }
