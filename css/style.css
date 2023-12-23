@@ -6,6 +6,17 @@
   box-sizing: border-box;  
 }
 
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
 dl, ol, ul {
   margin: 0;
   padding: 0;
@@ -20,16 +31,6 @@ h1,
 h2 {
   margin: 0;
   padding: 0;
-}
-
-
-li {
-  list-style-type: none;
-}
-
-a {
-  color: white;
-  text-decoration: none;
 }
 
 
@@ -55,6 +56,25 @@ a {
   height: var(--top-bar-height);
 }
 
+.form-control {
+  background-color: #e5e5e5;
+}
+
+
+/* campanella */
+#app-top-bar .fa-solid.fa-bell {
+  color: #ff8040;
+}
+
+/* Dropdown */
+.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-nav .dropdown-menu.show {
+  right: 0;
+}
+
 
 /* === APP BOTTOM === */
 
@@ -76,7 +96,7 @@ a {
   width: 20px;
 }
 
-.app-sidebar-section-bottom {
+.app-sidebar-section_bottom {
   margin-top: auto;
 }
 
@@ -84,7 +104,7 @@ a {
 
 /* === DASHBOARD MAIN CONTENT === */
 
-#main-content {
+#app-main-content {
   /* overflow: auto; */
   width: calc(100vw - 150px);
 }
