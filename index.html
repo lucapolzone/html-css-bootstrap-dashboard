@@ -139,14 +139,14 @@
             <div class="col-6 px-0">
              <div class="section-left row g-1 flex-column">
               <div class="col">
-                <h1>Boolean</h1><button class="btn btn-primary active btn-sm rounded-5">Piano blaze</button>
+                <h1>Boolean</h1><button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Piano blaze</button>
               </div>
               <div class="col">
-                <button class="btn btn-primary active btn-sm rounded-5">3 app</button>
+                <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">3 app</button>
                 <i class="fa-solid fa-angles-right"></i>
-                <button class="btn btn-primary active btn-sm rounded-5">Boolean mobile app</button>
-                <button class="btn btn-primary active btn-sm rounded-5">Boolean web app</button>
-                <button class="btn btn-primary active btn-sm rounded-5">Boolean blog app</button>
+                <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Boolean mobile app</button>
+                <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Boolean web app</button>
+                <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Boolean blog app</button>
               </div>             
             </div>
             </div>
@@ -177,29 +177,194 @@
 
       <!-- === DASHBOARD MAIN CONTENT === -->
       <div class="app-main-content_bottom">
-        <!-- <div class="container">
+        <div class="container">
           <div class="row">
-            <div class="col">
-              <div class="card">
-                <h2>Prossime classi</h2>
 
-              </div>
-              <div class="card">
-                <h2>FAQ</h2>
+            <!-- Colonna sx -->
+            <div class="col-8">
+              <div class="card my-2">
+                <div class="card-header">
+                  <h3>Prossime classi</h3>
+                </div>              
+                <table class="table table-hover text-center">
+                  <thead>
+                    <tr>
+                      <td class="text-start">Nome</td>
+                      <td>Data inizio</td>
+                      <td>ROI</td>
+                      <td>Stato</td>
+                      <td>Azioni</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-start">
+                        <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
+                        &nbsp;Classe 75
+                      </td>
+                      <td>15 Feb 2021</td>
+                      <td>20%</td>
+                      <td><button type="button" class="btn btn-sm rounded-3 btn-success py-0 px-2">Done</button></td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
 
+                    <tr>
+                      <td class="text-start">
+                        <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
+                        &nbsp;Classe 76
+                      </td>
+                      <td>16 Feb 2021</td>
+                      <td>20%</td>
+                      <td><button type="button" class="btn btn-sm rounded-3 btn-success py-0 px-2">Done</button></td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-start">
+                        <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
+                        &nbsp;Classe 77
+                      </td>
+                      <td>17 Feb 2021</td>
+                      <td>20%</td>
+                      <td><button type="button" class="btn btn-sm rounded-3 btn-warning py-0 px-2">Process</button></td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-start">
+                        <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
+                        &nbsp;Classe 78
+                      </td>
+                      <td>18 Feb 2021</td>
+                      <td>20%</td>
+                      <td><button type="button" class="btn btn-sm rounded-3 btn-success py-0 px-2">Done</button></td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-start">
+                        <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
+                        &nbsp;Classe 79
+                      </td>
+                      <td>19 Feb 2021</td>
+                      <td>20%</td>
+                      <td><button type="button" class="btn btn-sm rounded-3 btn-danger py-0 px-2">Failed</button></td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-start">
+                        <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
+                        &nbsp;Classe 80
+                      </td>
+                      <td>20 Feb 2021</td>
+                      <td>20%</td>
+                      <td><button type="button" class="btn btn-sm rounded-3 btn-success py-0 px-2">Done</button></td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-start">
+                        <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
+                        &nbsp;Classe 81
+                      </td>
+                      <td>21 Feb 2021</td>
+                      <td>20%</td>
+                      <td><button type="button" class="btn btn-sm rounded-3 btn-danger py-0 px-2">Failed</button></td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-start">
+                        <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
+                        &nbsp;Classe 82
+                      </td>
+                      <td>22 Feb 2021</td>
+                      <td>20%</td>
+                      <td><button type="button" class="btn btn-sm rounded-3 btn-success py-0 px-2">Done</button></td>
+                      <td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              
+
+              <div class="card">
+                <div class="card-header">
+                  <h3>F.A.Q.</h3>
+                </div> 
+              </div>
             </div>
-            <div class="col">
+
+            <!-- Colonna dx -->
+            <div class="col-4">
               <div class="card">
-                To do
+                <div class="card-header">
+                  <h3>To do</h3>
+                </div> 
               </div>
               <div class="card">
                 GRAFICO
+                <img src="./img/stats.jpeg" alt="">
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
 
       </div>
     </div>
