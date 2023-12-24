@@ -33,6 +33,12 @@ h2 {
   padding: 0;
 }
 
+h1 {
+  font-size: 2rem;
+  display: inline;
+}
+
+
 
 
 /* Debug */
@@ -102,9 +108,30 @@ h2 {
 
 
 
-/* === DASHBOARD MAIN CONTENT === */
+/* === HEADER MAIN CONTENT === */
 
 #app-main-content {
   /* overflow: auto; */
   width: calc(100vw - 150px);
 }
+
+.app-main-content_header {
+  background-color: #1b72e8;
+  color: white;
+}
+
+
+/* === DASHBOARD MAIN CONTENT === */
+
+
+
+#app-main-content .container {
+  /* background-color: aqua; */
+  max-width: 100%;
+}
+
+/* .col {
+  border: 2px solid green;
+} */
+
+
