@@ -27,7 +27,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <img src="./img/logo.svg" alt="logo-boolean">
+        <img src="./img/logo.svg" alt="logo-boolean" class="me-4">
         
         <!-- Questo bottone non so cosa sia -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,11 +36,9 @@
 
         <!-- Form Search -->
         <form class="d-flex flex-grow-1" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-
-          <!-- Bottone form invio  -->
-          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
         </form>
+
 
         <!-- Parte centrale header -->
         <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
@@ -84,9 +82,6 @@
     </nav>
 
 
-
-
-
   </header>
   
   <!-- === APP BOTTOM === -->
@@ -96,13 +91,13 @@
     <nav id="app-sidebar" class="d-flex flex-column">
       <div class="app-sidebar-section_top p-3">
         <ul>
-          <li>
+          <li class="my-3">
             <a href="#">
               <i class="fa-solid fa-house"></i>
               <span class="ms-2">Home</span>
             </a>
           </li>
-          <li>
+          <li class="my-3">
             <a href="#">
               <i class="fa-solid fa-chart-simple"></i>
               <span class="ms-2">Stats</span>
@@ -139,7 +134,7 @@
             <div class="col-6 px-0">
              <div class="section-left row g-1 flex-column">
               <div class="col">
-                <h1>Boolean</h1><button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Piano blaze</button>
+                <h1>Boolean</h1><button class="btn btn-primary active btn-sm rounded-3 py-0 px-2 mx-1">Piano blaze</button>
               </div>
               <div class="col">
                 <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">3 app</button>
@@ -165,9 +160,92 @@
             <div class="col-2">
               <div class="section-right h-100">
                 <span>Nuovo Studente</span>
-                <button class="btn btn-outline-light">
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                   <i class="fa-solid fa-plus"></i>
                 </button>
+
+                <!-- Componente Offcanvas -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+
+                    <!-- Bottone per chiudere la finestra -->
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    
+                    <!-- Inizio Form -->
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="fname" class="form-label">Nome</label>
+                        <input type="text" id="fname" name="fname" class="form-control">
+                      </div>
+                      
+                      <div class="col-md-6">
+                        <label for="lname" class="form-label">Cognome</label>
+                        <input type="text" id="lname" name="lname" class="form-control">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="">
+                      </div>
+                      
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">Stato</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Scegli...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">CAP</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      
+                      <div class="col-md-12 mb-3">
+                        <label for="formFile" class="form-label">Foto</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Seleziona per proseguire
+                          </label>
+                        </div>
+                      </div>
+                      
+                      <div class="col-1 me-2">
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                      </div>
+
+                      <div class="col-1 ms-2">
+                        <button type="submit" class="btn btn-warning">Svuota</button>
+                      </div>
+                    </form>
+                    <!-- Fine Form -->
+
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -177,7 +255,7 @@
 
       <!-- === DASHBOARD MAIN CONTENT === -->
       <div class="app-main-content_bottom">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
 
             <!-- Colonna sx -->
@@ -383,7 +461,7 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        Sì mi sono impegnato a renderla "responsive"
+                        Sì, mi sono impegnato a renderla "responsive"
                       </div>
                     </div>
                   </div>
@@ -456,7 +534,7 @@
                         <td>Marzo: 1500</td>
                       </tr>
                       <tr>
-                        <td>Visualizza report approfondito</td>
+                        <td><a href="#">Visualizza report approfondito</a></td>
                       </tr>
                     </tbody>
                   </table>

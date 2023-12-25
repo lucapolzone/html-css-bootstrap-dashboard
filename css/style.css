@@ -10,12 +10,10 @@ li {
   list-style-type: none;
 }
 
-a {
+#app-sidebar a {
   color: white;
   text-decoration: none;
 }
-
-
 
 dl, ol, ul {
   margin: 0;
@@ -38,9 +36,10 @@ h1 {
   display: inline;
 }
 
-.btn-warning {
+.card .btn-warning {
   color: white;
 }
+
 
 
 /* Debug */
@@ -122,6 +121,12 @@ h1 {
 .app-main-content_header {
   background-color: #1b72e8;
   color: white;
+}
+
+
+
+.offcanvas.offcanvas-end {
+  width: 700px;
 }
 
 
