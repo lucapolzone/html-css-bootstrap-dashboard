@@ -53,6 +53,7 @@ h1 {
 
 :root {
   --top-bar-height: 50px;
+  --app-sidebar-width: 150px;
 }
 
 
@@ -61,6 +62,10 @@ h1 {
 #app-top-bar {
   background-color: #e2e2e2;
   height: var(--top-bar-height);
+}
+
+.mobile-logo {
+  width: 45px;
 }
 
 .form-control {
@@ -78,9 +83,7 @@ h1 {
   display: none;
 }
 
-.navbar-nav .dropdown-menu.show {
-  right: 0;
-}
+
 
 
 /* === APP BOTTOM === */
@@ -93,7 +96,7 @@ h1 {
 /* === SIDEBAR === */
 
 #app-sidebar {
-  width: 150px;
+  width: var(--app-sidebar-width);
   background-color: #10283c;
   background-image: url('../img/sidebar-bg.png');
 }
@@ -109,13 +112,16 @@ h1 {
 
 
 
-/* === HEADER MAIN CONTENT === */
+/* === APP MAIN CONTENT === */
 
 #app-main-content {
-  width: calc(100vw - 150px);
+  width: calc(100vw - var(--app-sidebar-width));
   height: calc(100vh - var(--top-bar-height));
   overflow: auto;
 }
+
+
+/* === HEADER MAIN CONTENT === */
 
 
 .app-main-content_header {
@@ -123,10 +129,20 @@ h1 {
   color: white;
 }
 
+.section-left,
+.section-center,
+.section-right {
+  width: auto;
+  padding: 0;
+}
 
 
 .offcanvas.offcanvas-end {
   width: 700px;
+}
+
+#wrapper-buttons {
+  width: auto;
 }
 
 
@@ -145,5 +161,20 @@ h1 {
 
 .class-avatar {
   width: 35px;
+}
+
+
+/* === MEDIA QUERY === */
+
+
+@media screen and (max-width: 991px) {
+  :root {
+    --app-sidebar-width: 50px;
+  }  
+
+  .dropdown-menu.dropdown-menu-lg-end {
+    position: absolute;
+    left: -140px;
+  }
 }
 

@@ -27,33 +27,29 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <img src="./img/logo.svg" alt="logo-boolean" class="me-4">
+        <img src="./img/logo.svg" alt="logo-boolean" class="me-4 d-none d-lg-inline-block">
+        <img src="./img/mobile-logo.png" alt="logo-boolean" class="mobile-logo me-4 d-lg-none">
         
-        <!-- Questo bottone non so cosa sia -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
         <!-- Form Search -->
         <form class="d-flex flex-grow-1" role="search">
           <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
         </form>
 
-
+        
         <!-- Parte centrale header -->
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+        <div class="flex-grow-0 ms-1" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li class="nav-item d-none d-lg-block">
               <a class="nav-link active" href="#">
                 <i class="fa-solid fa-list-ul"></i>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-lg-block">
               <a class="nav-link" href="#">
                 <i class="fa-solid fa-circle-question"></i>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-lg-block">
               <a class="nav-link" href="#">
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </a>
@@ -61,7 +57,7 @@
 
             <!-- Dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle pb-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bell"></i>
               </a>
 
@@ -75,8 +71,6 @@
             </li>
             
           </ul>
-
-
         </div>
       </div>
     </nav>
@@ -94,23 +88,22 @@
           <li class="my-3">
             <a href="#">
               <i class="fa-solid fa-house"></i>
-              <span class="ms-2">Home</span>
+              <span class="d-none d-lg-inline-block ms-2">Home</span>
             </a>
           </li>
           <li class="my-3">
             <a href="#">
               <i class="fa-solid fa-chart-simple"></i>
-              <span class="ms-2">Stats</span>
+              <span class="d-none d-lg-inline-block ms-2">Stats</span>
             </a>
           </li>
           <li>
             <a href="#">
               <i class="fa-solid fa-signal"></i>
-              <span class="ms-2">Signals</span>
+              <span class="d-none d-lg-inline-block ms-2">Signals</span>
             </a>
           </li>
         </ul>
-        
       </div>
 
       <div class="app-sidebar-section_bottom p-3">
@@ -118,7 +111,7 @@
           <li>
             <a href="#">
               <i class="fa-solid fa-gear"></i>
-              <span>Admin</span>
+              <span class="d-none d-md-inline-block">Admin</span>
             </a>
           </li>
         </ul>
@@ -129,38 +122,13 @@
     <div id="app-main-content">
       <header class="app-main-content_header p-3">
 
-        <div class="container px-4 mx-0">
-          <div class="row">
-            <div class="col-6 px-0">
-             <div class="section-left row g-1 flex-column">
-              <div class="col">
-                <h1>Boolean</h1><button class="btn btn-primary active btn-sm rounded-3 py-0 px-2 mx-1">Piano blaze</button>
-              </div>
-              <div class="col">
-                <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">3 app</button>
-                <i class="fa-solid fa-angles-right"></i>
-                <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Boolean mobile app</button>
-                <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Boolean web app</button>
-                <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Boolean blog app</button>
-              </div>             
-            </div>
-            </div>
+        <div class="container h-100 px-4 mx-0">
+          <div class="row d-block d-md-flex justify-content-between">
 
-            <div class="col-4">
-              <div class="section-center row g-2 d-flex flex-column">
-                <div class="col">
-                  <p>Studenti online negli ultimi 30 minuti</p>
-                </div>
-                <div class="col">
-                  <h2>125</h2>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-2">
-              <div class="section-right h-100">
+            <!-- <div class="col-12 col-md-2"> -->
+              <div class="section-right d-flex align-items-baseline order-1 mt-2">
                 <span>Nuovo Studente</span>
-                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                   <i class="fa-solid fa-plus"></i>
                 </button>
 
@@ -237,7 +205,7 @@
                         <button type="submit" class="btn btn-primary">Salva</button>
                       </div>
 
-                      <div class="col-1 ms-2">
+                      <div class="col-1 ms-4">
                         <button type="submit" class="btn btn-warning">Svuota</button>
                       </div>
                     </form>
@@ -247,7 +215,40 @@
                 </div>
 
               </div>
-            </div>
+            <!-- </div> -->
+
+
+            <!-- <div class="col-12 col-md-6 px-0"> -->
+              <div class="section-left row g-1 flex-column">
+                <div class="col">
+                  <h1>Boolean</h1><button class="btn btn-primary active btn-sm rounded-3 py-0 px-2 mx-1">Piano blaze</button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">3 app</button>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <button class="btn btn-primary active btn-sm rounded-4 py-0 px-2 d-inline-block d-lg-none">+</button>
+                  <div id="wrapper-buttons" class="d-none d-lg-inline-block">
+                    <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Boolean mobile app</button>
+                    <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Boolean web app</button>
+                    <button class="btn btn-primary active btn-sm rounded-3 py-0 px-2">Boolean blog app</button>
+                  </div>
+                </div>             
+              </div>
+            <!-- </div> -->
+
+
+            <!-- <div class="col-12 col-md-4"> -->
+              <div class="section-center row g-2 d-flex flex-column">
+                <div class="col">
+                  <p>Studenti online negli ultimi 30 minuti</p>
+                </div>
+                <div class="col">
+                  <h2>125</h2>
+                </div>
+              </div>
+            <!-- </div> -->
+
+            
           </div>
         </div>
         
@@ -259,7 +260,8 @@
           <div class="row">
 
             <!-- Colonna sx -->
-            <div class="col-8">
+            <!-- <div class="col-8"> -->
+            <div class="col-md-12 col-lg-8">
               <div class="card my-2">
                 <div class="card-header">
                   <h3>Prossime classi</h3>
@@ -267,9 +269,9 @@
                 <table class="table table-hover text-center">
                   <thead>
                     <tr>
-                      <td class="text-start">Nome</td>
-                      <td>Data inizio</td>
-                      <td>ROI</td>
+                      <td class="text-start col-6">Nome</td>
+                      <td class="d-none d-md-table-cell">Data inizio</td>
+                      <td class="d-none d-sm-table-cell">ROI</td>
                       <td>Stato</td>
                       <td>Azioni</td>
                     </tr>
@@ -280,8 +282,8 @@
                         <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
                         &nbsp;Classe 75
                       </td>
-                      <td>15 Feb 2021</td>
-                      <td>20%</td>
+                      <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td><button type="button" class="btn btn-sm rounded-3 btn-success py-0 px-2">Done</button></td>
                       <td>
                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -298,8 +300,8 @@
                         <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
                         &nbsp;Classe 76
                       </td>
-                      <td>16 Feb 2021</td>
-                      <td>20%</td>
+                      <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td><button type="button" class="btn btn-sm rounded-3 btn-success py-0 px-2">Done</button></td>
                       <td>
                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -316,8 +318,8 @@
                         <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
                         &nbsp;Classe 77
                       </td>
-                      <td>17 Feb 2021</td>
-                      <td>20%</td>
+                      <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td><button type="button" class="btn btn-sm rounded-3 btn-warning py-0 px-2">Process</button></td>
                       <td>
                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -334,8 +336,8 @@
                         <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
                         &nbsp;Classe 78
                       </td>
-                      <td>18 Feb 2021</td>
-                      <td>20%</td>
+                      <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td><button type="button" class="btn btn-sm rounded-3 btn-success py-0 px-2">Done</button></td>
                       <td>
                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -352,8 +354,8 @@
                         <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
                         &nbsp;Classe 79
                       </td>
-                      <td>19 Feb 2021</td>
-                      <td>20%</td>
+                      <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td><button type="button" class="btn btn-sm rounded-3 btn-danger py-0 px-2">Failed</button></td>
                       <td>
                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -370,8 +372,8 @@
                         <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
                         &nbsp;Classe 80
                       </td>
-                      <td>20 Feb 2021</td>
-                      <td>20%</td>
+                      <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td><button type="button" class="btn btn-sm rounded-3 btn-success py-0 px-2">Done</button></td>
                       <td>
                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -388,8 +390,8 @@
                         <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
                         &nbsp;Classe 81
                       </td>
-                      <td>21 Feb 2021</td>
-                      <td>20%</td>
+                      <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td><button type="button" class="btn btn-sm rounded-3 btn-danger py-0 px-2">Failed</button></td>
                       <td>
                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -406,8 +408,8 @@
                         <img src="./img/class-avatar.jpg" class="class-avatar" alt="class-avatar">
                         &nbsp;Classe 82
                       </td>
-                      <td>22 Feb 2021</td>
-                      <td>20%</td>
+                      <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                      <td class="d-none d-sm-table-cell">20%</td>
                       <td><button type="button" class="btn btn-sm rounded-3 btn-success py-0 px-2">Done</button></td>
                       <td>
                         <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -471,7 +473,8 @@
             </div>
 
             <!-- Colonna dx -->
-            <div class="col-4">
+            <!-- <div class="col-4"> -->
+            <div class="col-md-12 col-lg-4">
               <div class="card my-2">
                 <div class="card-header">
                   <h3>Todo</h3>
@@ -482,8 +485,8 @@
                       <tr>
                         <td>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <label class="form-check-label">
                               Kickoff nuove lezioni
                             </label>
                           </div>                          
@@ -492,19 +495,21 @@
                       <tr>
                         <td>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <label class="form-check-label">
                               Lezione su Bootstrap 5 in classe #75
                             </label>
+                          </div>  
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <label class="form-check-label">
                               Controllare username github studenti
                             </label>
+                          </div>  
                         </td>
                       </tr>
                     </tbody>
