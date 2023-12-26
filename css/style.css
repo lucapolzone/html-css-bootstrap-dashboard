@@ -42,13 +42,6 @@ h1 {
 
 
 
-/* Debug */
-
-.debug {
-  border: 2px dashed red;
-}
-
-
 /* CUSTOM PROPS */
 
 :root {
@@ -73,6 +66,8 @@ h1 {
 }
 
 
+/* === Navbar === */
+
 /* campanella */
 #app-top-bar .fa-solid.fa-bell {
   color: #ff8040;
@@ -82,7 +77,6 @@ h1 {
 .dropdown-toggle::after {
   display: none;
 }
-
 
 
 
@@ -153,10 +147,6 @@ h1 {
   /* background-color: aqua; */
   max-width: 100%;
 }
-
-/* .col {
-  border: 2px solid green;
-} */
 
 
 .class-avatar {
