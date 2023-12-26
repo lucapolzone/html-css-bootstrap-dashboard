@@ -68,6 +68,13 @@ h1 {
 
 /* === Navbar === */
 
+/* Form search - lente d'ingrandimento*/
+.fa-solid.fa-magnifying-glass {
+  background-color: #e5e5e5;
+  font-size: 1.3rem;
+}
+
+
 /* campanella */
 #app-top-bar .fa-solid.fa-bell {
   color: #ff8040;
